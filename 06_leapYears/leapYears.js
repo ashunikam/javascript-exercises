@@ -1,8 +1,17 @@
 const leapYears = function(year) {
-    if(year%4==0){
-        return true;
-    }
-    return false;
+    let flag=false;
+   if(year%4==0){
+       flag=true;
+       if(year % 100 ===0){
+            if(year % 400 ===0){
+                flag= true;
+            }
+            flag= false;
+       }
+
+   }
+   return flag;
+
 };
 
 // Do not edit below this line
