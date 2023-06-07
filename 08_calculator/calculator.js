@@ -9,15 +9,21 @@ const subtract = function(num1,num2) {
 };
 
 const sum = function(a) {
-  return a.reduce((total, current) => total + current, 0);
+  let sum=0;
+  for(let i=0;i<a.length;i++){
+    sum=sum+a[i];
+  }
+  return sum;
 };
 	
 
 
 const multiply = function(a) {
-  return a.length
-    ? a.reduce((accumulator, nextItem) => accumulator * nextItem)
-    : 0;
+  let mul=1;
+  for(let i=0;i<a.length;i++){
+    mul=mul*a[i];
+  }
+  return mul;
 
 };
 
@@ -27,9 +33,10 @@ const power = function(num1,num2) {
 };
 
 const factorial = function(n) {
-  if (n === 0) return 1;
+  if (n === 0) 
+  return 1;
   
-  return factorial(n*(n-1));
+  return n*factorial(n-1);
 	
 };
 
