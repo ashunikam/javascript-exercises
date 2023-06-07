@@ -1,4 +1,7 @@
 const fibonacci = function(num) {
+  if(num<0){
+    return "OOPS"
+  }
   if(num<2){
       return parseInt(num);
   }
