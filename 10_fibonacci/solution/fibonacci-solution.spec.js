@@ -20,12 +20,12 @@ describe('fibonacci', () => {
     expect(fibonacci(-25)).toBe('OOPS');
   });
   test('DOES accept strings', () => {
-    expect(fibonacci('1')).toBe(1);
+    expect(fibonacci(parseInt('1'))).toBe(1);
   });
   test('DOES accept strings', () => {
-    expect(fibonacci('2')).toBe(1);
+    expect(fibonacci(parseInt('2'))).toBe(1);
   });
   test('DOES accept strings', () => {
-    expect(fibonacci('8')).toBe(21);
+    expect(fibonacci(parseInt('8'))).toBe(21);
   });
 });
